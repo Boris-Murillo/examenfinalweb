@@ -36,6 +36,18 @@ public class Usuario {
 	@Column (name = "estado")
 	private int estado;
 
+	
+	
+	public Usuario(Integer id, String usuario, String email, String pass, Rol rol, int estado) {
+		super();
+		this.id = id;
+		this.usuario = usuario;
+		this.email = email;
+		this.pass = pass;
+		this.rol = rol;
+		this.estado = estado;
+	}
+
 	public Usuario(String usuario, String email, String pass, Rol rol, int estado) {
 		super();
 		this.usuario = usuario;
