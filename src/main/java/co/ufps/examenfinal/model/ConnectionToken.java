@@ -47,6 +47,23 @@ public class ConnectionToken {
 	@JoinColumn(name = "type")
 	private TypeDb type;
 
+	
+	
+	public ConnectionToken(Integer id, String host, String userdb, String pass, String db, String token, int port,
+			Usuario usuario, int estado, TypeDb type) {
+		super();
+		this.id = id;
+		this.host = host;
+		this.userdb = userdb;
+		this.pass = pass;
+		this.db = db;
+		this.token = token;
+		this.port = port;
+		this.usuario = usuario;
+		this.estado = estado;
+		this.type = type;
+	}
+
 	public ConnectionToken(String host, String userdb, String pass, String db, String token, int port, Usuario usuario,
 			int estado, TypeDb type) {
 		super();

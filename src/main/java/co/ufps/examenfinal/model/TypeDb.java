@@ -26,4 +26,54 @@ public class TypeDb {
 	private String aditional;
 	
 	
+	public TypeDb(String descripcion, String driver, String aditional) {
+		super();
+		this.descripcion = descripcion;
+		this.driver = driver;
+		this.aditional = aditional;
+	}
+
+
+	public String getId() {
+		return id;
+	}
+
+
+	public void setId(String id) {
+		this.id = id;
+	}
+
+
+	public String getDescripcion() {
+		return descripcion;
+	}
+
+
+	public void setDescripcion(String descripcion) {
+		this.descripcion = descripcion;
+	}
+
+
+	public String getDriver() {
+		return driver;
+	}
+
+
+	public void setDriver(String driver) {
+		this.driver = driver;
+	}
+
+
+	public String getAditional() {
+		return aditional;
+	}
+
+
+	public void setAditional(String aditional) {
+		this.aditional = aditional;
+	}
+	
+	
+	
+	
 }
